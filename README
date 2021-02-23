@@ -1,0 +1,6 @@
+Home is where the .heartrc is
+
+* .zshrc - zshell/oh-my-zsh config
+* .p10k.zsh - Powerline10K config
+* kitty.conf - config for Kitty terminal
+* init.vim - neovim config
