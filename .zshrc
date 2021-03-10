@@ -124,6 +124,8 @@ export CPATH="/home/mikowitz/.asdf/installs/erlang/23.2.1/erts-11.1.5/include"
 export C_INCLUDE_PATH="/home/mikowitz/.asdf/installs/erlang/23.2.1/erts-11.1.5/include"
 export CPLUS_INCLUDE_PATH="/home/mikowitz/.asdf/installs/erlang/23.2.1/erts-11.1.5/include"
 
+export PATH="$PATH:/home/mikowitz/.local/bin"
+
 setopt EXTENDED_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS
