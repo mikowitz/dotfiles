@@ -1,0 +1,75 @@
+[colors]
+background = ##000000
+black = #ccffff
+
+[bar/top]
+modules-left = i3
+modules-center = date
+modules-right = pulseaudio
+spacing = 3
+background = ${colors.background}
+foreground = ${colors.black}
+height = 34
+radius = 10
+padding-left = 2
+margin-module-left = 10
+margin-module-right = 10
+tray-position = right
+# font-0 = Fira Code:weight=medium:pixelsize=11
+font-0 = Arial:weight=bold:size=12
+font-1 = Arial:weight=bold
+# font-2 = Arial:weight=bold
+font-2 = FontAwesome:size=10;-1
+
+[bar/bottom]
+bottom = true
+spacing = 3
+modules-right = cpu memory
+
+[module/date]
+type = internal/date
+date = %a %d %b %Y, %H:%M:%S
+
+[module/i3]
+type = internal/i3
+pin-workspaces = false
+strip-wsnumbers = true
+enable-click = true
+
+[module/memory]
+type = internal/memory
+format = <label> <bar-used>
+label = RAM
+
+bar-used-width = 10
+bar-used-foreground-0 = #aaff77
+bar-used-foreground-1 = #aaff77
+bar-used-foreground-2 = #fba922
+bar-used-foreground-3 = #ff5555
+bar-used-indicator = |
+bar-used-indicator-font = 6
+bar-used-indicator-foreground = #ff
+bar-used-fill = ─
+bar-used-fill-font = 6
+bar-used-empty = ─
+bar-used-empty-font = 6
+bar-used-empty-foreground = #444444
+
+[module/pulseaudio]
+type = internal/pulseaudio
+interval = 0.5
+format-volume = <label-volume> <bar-volume>
+label-muted = "         muted"
+bar-volume-width = 10
+bar-volume-foreground-0 = #aaff77
+bar-volume-foreground-1 = #aaff77
+bar-volume-foreground-2 = #fba922
+bar-volume-foreground-3 = #ff5555
+bar-volume-indicator = |
+bar-volume-indicator-font = 6
+bar-volume-indicator-foreground = #ff
+bar-volume-fill = ─
+bar-volume-fill-font = 6
+bar-volume-empty = ─
+bar-volume-empty-font = 6
+bar-volume-empty-foreground = #444444
