@@ -1,0 +1,19 @@
+#!/usr/bin/env elixir
+
+home = System.get_env("HOME")
+
+{:ok, lines} = File.read("files")
+lines
+|> String.split("\n", trim: true)
+|> Enum.map(fn line ->
+  [local_path, system_path] = String.split(line, ",", trim: true)
+  source = File.cwd!() <> "/" <> local_path
+  dest = home <> "/" <> system_path
+  IO.write "symlinking #{source} to #{dest} "
+  {_, status} = System.cmd("ln", ["-nfs", source, dest])
+  case status do
+    0 -> IO.write IO.ANSI.green() <> "✓"
+    _ -> IO.write IO.ANSI.red() <> "✗"
+  end
+  IO.puts IO.ANSI.reset
+end)

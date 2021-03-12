@@ -1,0 +1,22 @@
+[alias]
+	co = checkout
+	st = status
+	frm = !git checkout main && git fetch origin -p && git rebase origin/main && git checkout -
+[user]
+	email = michael.berkowitz@gmail.com
+	name = Michael Berkowitz
+	username = mikowitz
+[core]
+	excludesfile = ~/.gitignore
+	editor = nvim
+	pager = delta
+[color]
+	ui = true
+[delta]
+	syntax-theme = "ansi-dark"
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[interactive]
+	diffFilter = delta --color-only

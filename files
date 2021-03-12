@@ -1,0 +1,11 @@
+config,.config/polybar/config
+config.rasi,.config/rofi/config.rasi
+.gitconfig,.gitconfig
+i3.conf,.config/i3/config
+init.vim,.config/nvim/init.vim
+kitty.conf,.config/kitty/kitty.conf
+launch.sh,.config/polybar/launch.sh
+.p10k.zsh,.p10k.zsh
+redshift.conf,.config/redshift.conf
+.tmux.conf,.tmux.conf
+.zshrc,.zshrc
