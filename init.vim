@@ -276,17 +276,17 @@ set background=dark
 " hi CursorLine ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
 
 if exists('+termguicolors')
-  " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  " let &t_8f = "\<Esc>[38;2%lu;%lu;%lum"
-  " let &t_8b = "\<Esc>[48;2%lu;%lu;%lum"
-  " set termguicolors
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  let &t_8f = "\<Esc>[38;2%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2%lu;%lu;%lum"
+  set termguicolors
 endif
 
 set colorcolumn=80
-hi ColorColumn guibg=#00d0d0
+hi ColorColumn guibg=#d0d0d0
 
-hi ActiveWindow guibg=#303030
-hi InactiveWindow guibg=#000000
+hi InactiveWindow guibg=#181818
+hi ActiveWindow guibg=#000000
 
 function! Handle_Win_Enter()
   setlocal winhighlight=Normal:ActiveWindow,NormalNC:InactiveWindow
