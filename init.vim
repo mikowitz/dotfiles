@@ -86,8 +86,11 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'ostera/vimux'
-let g:VimuxOrientation = "h"
+let g:VimuxOrientation = "v"
 let g:VimuxHeight = 30
+let g:VimuxUseNearest = 0
+map <leader>vq :VimuxCloseRunner<CR>
+
 Plug 'spiegela/vimix'
 let g:vimix_map_keys = 1
 
@@ -185,7 +188,12 @@ Plug 'ervandew/supertab'
 
 Plug 'majutsushi/tagbar'
 
+let g:neoformat_only_msg_on_error = 1
+Plug 'sbdchd/neoformat'
+autocmd BufWritePre *.ex Neoformat
+
 call plug#end()
+
 
 set hidden
 
