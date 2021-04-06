@@ -93,6 +93,7 @@ map <leader>vq :VimuxCloseRunner<CR>
 
 Plug 'spiegela/vimix'
 let g:vimix_map_keys = 1
+let g:vimix_mix_command = "MIX_ENV=test mix"
 
 Plug 'tpope/vim-projectionist'
 
@@ -190,7 +191,7 @@ Plug 'majutsushi/tagbar'
 
 let g:neoformat_only_msg_on_error = 1
 Plug 'sbdchd/neoformat'
-autocmd BufWritePre *.ex Neoformat
+autocmd BufWritePre *.ex,*.exs Neoformat
 
 call plug#end()
 
