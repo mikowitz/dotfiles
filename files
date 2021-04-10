@@ -9,4 +9,5 @@ launch.sh,.config/polybar/launch.sh
 redshift.conf,.config/redshift.conf
 .tmux.conf,.tmux.conf
 .zshrc,.zshrc
+.tool-versions,.tool-versions
 phx,.local/bin

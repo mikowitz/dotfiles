@@ -1,0 +1,13 @@
+after setting up git (which you'll need to check this out anyway)
+
+asdf - elixir and erlang for running the setup file here
+
+```
+sudo add-apt-repository ppa:kgilmer/speed-ricer
+sudo apt-get update
+
+sudo apt install i3-gaps-wm
+```
+
+Reverse scrolling: https://askubuntu.com/questions/1122513/how-to-add-natural-inverted-mouse-scrolling-in-i3-window-manager
+remap caps lock to ctrl: https://www.reddit.com/r/i3wm/comments/2xoo9m/what_is_the_best_way_to_remap_ctrlkey_with/
