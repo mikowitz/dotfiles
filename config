@@ -24,7 +24,16 @@ font-2 = FontAwesome:size=10;-1
 [bar/bottom]
 bottom = true
 spacing = 3
+modules-left = battery
 modules-right = cpu memory
+
+[module/battery]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = AC
+poll-interval = 5
+
 
 [module/date]
 type = internal/date

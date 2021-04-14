@@ -89,6 +89,10 @@ alias tmux='tmux -2'
 alias tas='tmux attach-session -t$1'
 alias tks='tmux kill-session -t$1'
 
+disconnect () {
+  CONNECTED=$(xrandr | ag ' connected' | ag -v 'eDP-1' | cut -f1 -d' ')
+  echo $CONNECTED
+}
 
 # User configuration
 
@@ -137,3 +141,5 @@ setopt HIST_BEEP
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[[ ! -f ~/.ez.zsh ]] || source ~/.ez.zsh
